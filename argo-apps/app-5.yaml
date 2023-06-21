@@ -14,3 +14,9 @@ spec:
     path: my-apps/app-5
     repoURL: https://github.com/moopuck/argo-app-of-apps.git
     targetReversion: HEAD
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true
